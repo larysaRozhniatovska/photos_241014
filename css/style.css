@@ -28,3 +28,8 @@ button{
     color: #ffffff;
     font-size: 18px;
 }
+
+a>img{
+    max-width: 200px;
+    max-height: 200px;
+}
