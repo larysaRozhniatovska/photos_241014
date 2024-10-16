@@ -6,6 +6,7 @@ const PHOTO_AVAILABLE_TYPES = [
     'image/jpeg',
     'image/png',
     ];
+
 const UPLOAD_ERROR_MESSAGES = [
     0 => 'There is no error, the file uploaded with success',
     1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
@@ -16,6 +17,7 @@ const UPLOAD_ERROR_MESSAGES = [
     7 => 'Failed to write file to disk.',
     8 => 'A PHP extension stopped the file upload.',
 ];
+const PHOTO_PATH = '../../';
 const PHOTO_DIR = 'images';
 const PAGES =  [
     [
