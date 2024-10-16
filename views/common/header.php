@@ -1,3 +1,3 @@
 <header>
-    <a href="<?= getUrl('view')?>"><?= SITE_NAME?></a>
+    <h1><?= SITE_NAME?></h1>
 </header>

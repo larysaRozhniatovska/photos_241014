@@ -37,6 +37,9 @@ function getUrl(string $action) : string
  */
 function init() : void
 {
+    if (!file_exists(PHOTO_DIR)){
+        mkdir(PHOTO_DIR);
+    }
     // Reading the GET parameter 'action' using filter_input
     $action = filter_input(INPUT_GET, 'action');
 
