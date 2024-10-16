@@ -27,10 +27,13 @@ function view() : void
  */
 function form() : void
 {
-    render('form');
-//    , ['errors' => getErrors()]);
+    render('form', ['errors' => getErrors()]);
 }
 
+/**
+ * check file and copy to /images
+ * @return void
+ */
 function proc() : void
 {
 //    var_dump($_FILES);
@@ -59,7 +62,6 @@ function proc() : void
             }
         }
     }
-    var_dump($errors);
     //если ошибки то сохранияем и переправляем на форму
     if(count($errors) > 0){
         setErrors($errors);
@@ -68,6 +70,11 @@ function proc() : void
 
     redirect('view');
 }
+
+/**
+ * @param string $action
+ * @return never
+ */
 function redirect(string $action) : never
 {
     header('Location: ' . getUrl($action));
